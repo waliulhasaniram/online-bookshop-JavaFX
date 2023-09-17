@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="870.0" prefWidth="642.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="online_shopfx.Home_windowController">
+   <children>
+      <Button layoutX="312.0" layoutY="65.0" mnemonicParsing="false" onAction="#Add_Clothing_Iteams" prefHeight="42.0" prefWidth="148.0" text="Add Clothing Iteams" textAlignment="CENTER" textFill="#002751">
+         <effect>
+            <Glow />
+         </effect>
+      </Button>
+      <Button layoutX="164.0" layoutY="65.0" mnemonicParsing="false" onAction="#Add_Electronics_Iteams" prefHeight="42.0" prefWidth="148.0" text="Add Electronics Iteams" textAlignment="CENTER" textFill="#002751">
+         <effect>
+            <Glow />
+         </effect>
+      </Button>
+      <Button layoutX="16.0" layoutY="65.0" mnemonicParsing="false" onAction="#Add_Food_Iteams" prefHeight="42.0" prefWidth="148.0" text="Add Food Iteams" textAlignment="CENTER" textFill="#002751">
+         <effect>
+            <Glow />
+         </effect>
+      </Button>
+      <Text fill="#3885f2" layoutX="274.0" layoutY="40.0" scaleX="2.0" scaleY="2.0" scaleZ="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admins Panel" textOrigin="CENTER" />
+      <Text fill="#0726f1" layoutX="244.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="List of the food iteams" textAlignment="CENTER" />
+      <Text fill="#0726f1" layoutX="228.0" layoutY="391.0" strokeType="OUTSIDE" strokeWidth="0.0" text="List of the electronics iteams" textAlignment="CENTER" />
+      <Text fill="#0726f1" layoutX="234.0" layoutY="634.0" strokeType="INSIDE" strokeWidth="0.0" text="List of the clothe iteams" textAlignment="CENTER" />
+      <TableView fx:id="FoodListTable" layoutX="33.0" layoutY="148.0" prefHeight="200.0" prefWidth="558.0">
+        <columns>
+          <TableColumn fx:id="food_name" prefWidth="107.0" text="Food name" />
+          <TableColumn fx:id="food_id" prefWidth="72.0" text="ID" />
+            <TableColumn fx:id="food_quantity" prefWidth="116.0" text="Quantity" />
+            <TableColumn fx:id="food_price" prefWidth="116.0" text="price" />
+            <TableColumn fx:id="food_expire" prefWidth="146.0" text="Expire Date" />
+        </columns>
+      </TableView>
+      <TableView fx:id="ElectronicListTable" layoutX="31.0" layoutY="403.0" prefHeight="200.0" prefWidth="558.0">
+        <columns>
+          <TableColumn fx:id="Electronics_name" prefWidth="129.0" text="Electronics name" />
+          <TableColumn fx:id="Electronics_id" prefWidth="72.0" text="ID" />
+            <TableColumn fx:id="Electronics_quantity" prefWidth="110.0" text="Quantity" />
+            <TableColumn fx:id="Electronics_price" prefWidth="113.0" text="Price" />
+            <TableColumn fx:id="Electronics_manufacturer" prefWidth="133.0" text="Manufacturer" />
+        </columns>
+      </TableView>
+      <TableView fx:id="clotheListTable" layoutX="31.0" layoutY="638.0" prefHeight="200.0" prefWidth="558.0">
+        <columns>
+          <TableColumn fx:id="clothe_name" prefWidth="99.0" text="Clothe name " />
+          <TableColumn fx:id="clothe_id" prefWidth="60.0" text="ID" />
+            <TableColumn fx:id="clothe_brand" prefWidth="92.0" text="Brand" />
+            <TableColumn fx:id="clothe_catagory" prefWidth="100.0" text="catagory" />
+            <TableColumn fx:id="clothe_price" prefWidth="99.0" text="Price" />
+            <TableColumn fx:id="clothe_size" prefWidth="107.0" text="Size" />
+        </columns>
+      </TableView>
+      <Button layoutX="460.0" layoutY="65.0" mnemonicParsing="false" onAction="#delete" prefHeight="42.0" prefWidth="150.0" text="Select and Delete Iteams" />
+      <Button layoutX="460.0" layoutY="28.0" mnemonicParsing="false" onAction="#go_back_to_log_in_page" text="Go back to log in page" textFill="#e50202" />
+   </children>
+   <effect>
+      <Glow level="0.04" />
+   </effect>
+</AnchorPane>
